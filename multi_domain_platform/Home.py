@@ -30,10 +30,12 @@ with tab_login:
 
     if st.button("Log in", type="primary"):
         users = st.session_state.users
-        if login_username in users and users[login_username] == login_password:
+        if login_username in users and users[login_username]["password"]== login_password:
             st.session_state.logged_in = True
             st.session_state.username = login_username
+            st.session_state.role = users[login_username]["role"]
             st.success(f"Welcome back, {login_username}! 🎉")
+            st.info(f"Your role: {st.session_state.role}")
             st.switch_page("pages/1_Dashboard.py")
         else:
             st.error("Invalid username or password.")
