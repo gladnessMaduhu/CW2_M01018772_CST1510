@@ -16,7 +16,7 @@ if not st.session_state.logged_in:
     st.stop()
 
 # ---------------- Configure Gemini ----------------
-API_KEY = "AIzaSyAG1C8gYVQhcNBSME5-8d8WPnO2H5Ocfj4"
+API_KEY = "AIzaSyCX-sypSqbmfTMJbWuJ-Hv662C_ZKbmokw"
 genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel("gemini-2.5-flash")
