@@ -54,7 +54,7 @@ multi_domain_platform
 
 │   ├── 4_IT_Operations.py
 
-│   └── 5_🤖_AI_Assistant.py
+│   └── 5_AI_Assistant.py
 
 ├── .streamlit/              
 │   └── secrets.toml
@@ -110,5 +110,6 @@ Ploty/ Matplotlib ( for visualization),
 Gemini AI ( for AI assistant). 
 
 **contributor name is GLADNESS MADUHU, STUDENT ID = M01018772**
+
 
 
