@@ -14,7 +14,7 @@ if "username" not in st.session_state:
 if not st.session_state.logged_in:
     st.error("You must be logged in to view the dashboard.")
     if st.button("Go back to login"):
-        st.switch_page("Home")
+        st.switch_page("pages/Home.py")
     st.stop()
 
 # ---------- Dashboard content ----------
@@ -41,3 +41,4 @@ with col2:
 # Raw data in an expander
 with st.expander("See raw data"):
     st.dataframe(data)
+
