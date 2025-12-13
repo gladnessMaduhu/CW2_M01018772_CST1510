@@ -11,7 +11,7 @@ if "logged_in" not in st.session_state:
 if not st.session_state.logged_in:
     st.error("You must be logged in to access this page.")
     if st.button("Go to Login"):
-        st.switch_page("Home")
+        st.switch_page("pages/Home.py")
     st.stop()
 
 st.title("Cybersecurity Analytics")
@@ -83,3 +83,4 @@ with col2:
         st.bar_chart(filtered["IncidentType"].value_counts())
     else:
         st.info("No 'IncidentType' column in data.")
+
