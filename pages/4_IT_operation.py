@@ -12,7 +12,7 @@ if "logged_in" not in st.session_state:
 if not st.session_state.logged_in:
     st.error("You must be logged in to access this page.")
     if st.button("Go to Login"):
-        st.switch_page("Home")
+        st.switch_page("pages/Home.py")
     st.stop()
 
 st.title("IT Operations | Intelligence Platform")
@@ -54,3 +54,4 @@ if len(numeric_cols) > 0:
     st.line_chart(df[column_to_plot])
 else:
     st.info("No numeric columns found.")
+
